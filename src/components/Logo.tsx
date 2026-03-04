@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { PenTool } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import logoLight from '@/assets/logo-light.png';
-import logoDark from '@/assets/logo-dark.png';
 
 interface LogoProps {
   className?: string;
@@ -20,7 +18,8 @@ const Logo: React.FC<LogoProps> = ({
   light = false
 }) => {
   const [imageError, setImageError] = useState(false);
-  const logoSrc = light ? logoLight : logoDark;
+  // Use static paths from public folder
+  const logoSrc = light ? '/logo-light.png' : '/logo-dark.png';
 
   return (
     <div className={cn("flex items-center gap-3 select-none", className)}>
