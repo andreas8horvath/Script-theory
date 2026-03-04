@@ -15,7 +15,7 @@ const Section = ({ children, className, id, dark = false }: SectionProps) => {
       id={id}
       className={cn(
         "py-20 md:py-32 px-6 lg:px-12 overflow-hidden",
-        dark ? "bg-deep-teal text-warm-ivory" : "bg-warm-ivory text-charcoal",
+        dark ? "bg-directors-crimson text-textured-vellum" : "bg-textured-vellum text-espresso-black",
         className
       )}
     >

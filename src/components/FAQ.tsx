@@ -38,24 +38,29 @@ const faqs = [
   }
 ];
 
-const FAQItem = ({ question, answer }: { question: string; answer: string }) => {
+interface FAQItemProps {
+  question: string;
+  answer: string;
+}
+
+const FAQItem: React.FC<FAQItemProps> = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border-b border-charcoal/10 last:border-0">
+    <div className="border-b border-espresso-black/10 last:border-0">
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center justify-between w-full py-6 text-left group"
       >
         <span className={cn(
           "text-lg font-medium transition-colors duration-300 pr-8",
-          isOpen ? "text-deep-teal" : "text-charcoal group-hover:text-deep-teal"
+          isOpen ? "text-directors-crimson" : "text-espresso-black group-hover:text-directors-crimson"
         )}>
           {question}
         </span>
         <span className={cn(
           "flex-shrink-0 transition-colors duration-300",
-          isOpen ? "text-burnt-amber" : "text-charcoal/40 group-hover:text-deep-teal"
+          isOpen ? "text-golden-ocher" : "text-espresso-black/40 group-hover:text-directors-crimson"
         )}>
           {isOpen ? <Minus size={20} /> : <Plus size={20} />}
         </span>
@@ -69,7 +74,7 @@ const FAQItem = ({ question, answer }: { question: string; answer: string }) => 
             transition={{ duration: 0.3, ease: "easeInOut" }}
             className="overflow-hidden"
           >
-            <p className="pb-6 text-charcoal/80 leading-relaxed">
+            <p className="pb-6 text-espresso-black/80 leading-relaxed">
               {answer}
             </p>
           </motion.div>
@@ -82,8 +87,8 @@ const FAQItem = ({ question, answer }: { question: string; answer: string }) => 
 export default function FAQ() {
   return (
     <div className="max-w-3xl mx-auto">
-      <h2 className="text-3xl md:text-4xl text-center mb-12 text-deep-teal">Common Questions</h2>
-      <div className="bg-white rounded-sm border border-charcoal/5 p-6 md:p-8 shadow-sm">
+      <h2 className="text-3xl md:text-4xl text-center mb-12 text-directors-crimson">Common Questions</h2>
+      <div className="bg-white rounded-sm border border-espresso-black/5 p-6 md:p-8 shadow-sm">
         {faqs.map((faq, index) => (
           <FAQItem key={index} question={faq.question} answer={faq.answer} />
         ))}

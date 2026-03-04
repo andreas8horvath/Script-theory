@@ -20,7 +20,7 @@ const Home = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-deep-teal text-warm-ivory px-6">
+      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-directors-crimson text-textured-vellum px-6">
         <div className="absolute inset-0 z-0">
           <motion.img 
             src="https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=2573&auto=format&fit=crop" 
@@ -36,7 +36,7 @@ const Home = () => {
             }}
             referrerPolicy="no-referrer"
           />
-          <div className="absolute inset-0 bg-deep-teal/50 mix-blend-multiply" />
+          <div className="absolute inset-0 bg-directors-crimson/50 mix-blend-multiply" />
           <DustParticles />
         </div>
 
@@ -51,18 +51,18 @@ const Home = () => {
               className="font-serif text-4xl md:text-6xl lg:text-7xl leading-tight mb-6"
             >
               <span className="md:whitespace-nowrap">Your Characters Are Waiting.</span> <br/>
-              <span className="italic text-soft-gold">Learn to Speak to Them.</span>
+              <span className="italic text-antique-brass">Learn to Speak to Them.</span>
             </motion.h1>
             
             <motion.p 
               variants={fadeInUp}
-              className="text-lg md:text-xl text-warm-ivory/90 mb-10 max-w-2xl mx-auto font-light leading-relaxed"
+              className="text-lg md:text-xl text-textured-vellum/90 mb-10 max-w-2xl mx-auto font-light leading-relaxed"
             >
               Holistic screenwriting coaching for writers ready to go beyond formula and build living, emotionally powerful stories.
             </motion.p>
             
             <motion.div variants={fadeInUp}>
-              <Button to="/contact" variant="primary" className="bg-burnt-amber hover:bg-white hover:text-deep-teal">
+              <Button to="/contact" variant="primary" className="bg-golden-ocher hover:bg-white hover:text-directors-crimson">
                 Book a Discovery Call
               </Button>
             </motion.div>
@@ -78,7 +78,7 @@ const Home = () => {
       </section>
 
       {/* Problem / Recognition Section */}
-      <Section className="bg-warm-ivory">
+      <Section className="bg-textured-vellum">
         <motion.div 
           initial="hidden"
           whileInView="visible"
@@ -86,11 +86,11 @@ const Home = () => {
           variants={stagger}
           className="max-w-3xl mx-auto"
         >
-          <motion.h2 variants={fadeInUp} className="text-3xl md:text-4xl mb-8 text-deep-teal">
+          <motion.h2 variants={fadeInUp} className="text-3xl md:text-4xl mb-8 text-directors-crimson">
             Something Isn’t Working — <span className="italic font-serif">And You Can Feel It</span>
           </motion.h2>
           
-          <motion.div variants={fadeInUp} className="space-y-6 text-lg leading-relaxed text-charcoal/80">
+          <motion.div variants={fadeInUp} className="space-y-6 text-lg leading-relaxed text-espresso-black/80">
             <p>
               You know the structure. You’ve studied the three-act framework, read the books, maybe even taken a course or two. You can write a scene that follows the rules. But when you read it back, something is missing. The page is correct, but it isn’t alive.
             </p>
@@ -100,7 +100,7 @@ const Home = () => {
             <p>
               And the hardest part? You can’t quite name what’s wrong. You just know that the gap between what you’re writing and what you’re trying to say is growing wider, and no amount of restructuring, rewriting, or reading another craft book seems to close it.
             </p>
-            <p className="font-medium text-deep-teal text-xl pt-4">
+            <p className="font-medium text-directors-crimson text-xl pt-4">
               That gap is real. And it’s not a problem of technique.
             </p>
           </motion.div>
@@ -117,10 +117,10 @@ const Home = () => {
             variants={stagger}
           >
             <motion.h2 variants={fadeInUp} className="text-3xl md:text-5xl mb-8 leading-tight">
-              The Missing Piece Isn’t in the Structure — <span className="italic text-soft-gold">It’s in the Relationship</span>
+              The Missing Piece Isn’t in the Structure — <span className="italic text-antique-brass">It’s in the Relationship</span>
             </motion.h2>
             
-            <motion.div variants={fadeInUp} className="space-y-6 text-warm-ivory/80 leading-relaxed">
+            <motion.div variants={fadeInUp} className="space-y-6 text-textured-vellum/80 leading-relaxed">
               <p>
                 The screenplays that move audiences — the ones that stay with you long after the credits roll — are not the ones with the most polished structure. They’re the ones where the writer had a living, breathing relationship with their characters and their storyverse.
               </p>
@@ -145,7 +145,7 @@ const Home = () => {
               className="w-full h-full object-cover rounded-sm opacity-80"
               referrerPolicy="no-referrer"
             />
-            <div className="absolute inset-0 border border-warm-ivory/10 m-4 pointer-events-none" />
+            <div className="absolute inset-0 border border-textured-vellum/10 m-4 pointer-events-none" />
           </motion.div>
         </div>
       </Section>
@@ -159,8 +159,8 @@ const Home = () => {
           variants={fadeInUp}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl mb-4 text-deep-teal">Three Pathways Deeper</h2>
-          <div className="w-24 h-px bg-burnt-amber mx-auto" />
+          <h2 className="text-4xl md:text-5xl mb-4 text-directors-crimson">Three Pathways Deeper</h2>
+          <div className="w-24 h-px bg-golden-ocher mx-auto" />
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-12">
@@ -192,10 +192,10 @@ const Home = () => {
               }}
               className="group cursor-pointer"
             >
-              <div className="h-full flex flex-col border border-charcoal/10 p-8 hover:bg-warm-ivory hover:shadow-xl transition-all duration-500 hover:-translate-y-1 bg-white/50">
-                <h3 className="text-2xl mb-6 text-deep-teal group-hover:text-burnt-amber transition-colors">{service.title}</h3>
-                <p className="text-charcoal/70 mb-8 leading-relaxed flex-grow">{service.desc}</p>
-                <Link to={service.link} className="inline-flex items-center text-sm uppercase tracking-widest font-medium text-deep-teal group-hover:translate-x-2 transition-transform mt-auto">
+              <div className="h-full flex flex-col border border-espresso-black/10 p-8 hover:bg-textured-vellum hover:shadow-xl transition-all duration-500 hover:-translate-y-1 bg-white/50">
+                <h3 className="text-2xl mb-6 text-directors-crimson group-hover:text-golden-ocher transition-colors">{service.title}</h3>
+                <p className="text-espresso-black/70 mb-8 leading-relaxed flex-grow">{service.desc}</p>
+                <Link to={service.link} className="inline-flex items-center text-sm uppercase tracking-widest font-medium text-directors-crimson group-hover:translate-x-2 transition-transform mt-auto">
                   Learn More <ArrowRight size={16} className="ml-2" />
                 </Link>
               </div>
@@ -205,7 +205,7 @@ const Home = () => {
       </Section>
 
       {/* Why Me Section */}
-      <Section className="bg-muted-clay/10">
+      <Section className="bg-terracotta-sand/10">
         <div className="grid md:grid-cols-12 gap-12 items-center">
           <div className="md:col-span-5">
              <img 
@@ -222,12 +222,12 @@ const Home = () => {
             viewport={{ once: true }}
             variants={stagger}
           >
-            <motion.h2 variants={fadeInUp} className="text-3xl md:text-5xl mb-8 text-deep-teal">
+            <motion.h2 variants={fadeInUp} className="text-3xl md:text-5xl mb-8 text-directors-crimson">
               A Coach Who Writes. <br/>
-              <span className="italic text-burnt-amber">A Writer Who Coaches.</span>
+              <span className="italic text-golden-ocher">A Writer Who Coaches.</span>
             </motion.h2>
             
-            <motion.div variants={fadeInUp} className="space-y-6 text-lg text-charcoal/80 leading-relaxed">
+            <motion.div variants={fadeInUp} className="space-y-6 text-lg text-espresso-black/80 leading-relaxed">
               <p>
                 I’m not a theorist. I’m a working screenwriter who has spent over a decade in the trenches — writing features and TV pilots for clients, analysing scripts for production companies, mentoring emerging talent, and developing original content across genres.
               </p>
@@ -240,24 +240,24 @@ const Home = () => {
             </motion.div>
             
             <motion.div variants={fadeInUp} className="mt-8">
-              <Button to="/about" variant="text" className="text-deep-teal">Read My Story</Button>
+              <Button to="/about" variant="text" className="text-directors-crimson">Read My Story</Button>
             </motion.div>
           </motion.div>
         </div>
       </Section>
 
       {/* Testimonial Slider Section */}
-      <Section className="bg-deep-teal text-warm-ivory">
+      <Section className="bg-directors-crimson text-textured-vellum">
         <TestimonialSlider />
       </Section>
 
       {/* Who This Is For Section */}
-      <Section className="bg-muted-clay/10">
+      <Section className="bg-terracotta-sand/10">
         <div className="max-w-4xl mx-auto">
           <motion.h2 
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            className="text-3xl md:text-4xl mb-12 text-center text-deep-teal"
+            className="text-3xl md:text-4xl mb-12 text-center text-directors-crimson"
           >
             This Is For You If...
           </motion.h2>
@@ -278,8 +278,8 @@ const Home = () => {
                 transition={{ delay: i * 0.1 }}
                 className="flex items-start"
               >
-                <span className="text-burnt-amber mr-4 text-xl">•</span>
-                <p className="text-charcoal/80">{item}</p>
+                <span className="text-golden-ocher mr-4 text-xl">•</span>
+                <p className="text-espresso-black/80">{item}</p>
               </motion.div>
             ))}
           </div>
@@ -295,18 +295,18 @@ const Home = () => {
           variants={stagger}
           className="max-w-3xl mx-auto"
         >
-          <motion.h2 variants={fadeInUp} className="text-4xl md:text-6xl mb-8 text-deep-teal">
+          <motion.h2 variants={fadeInUp} className="text-4xl md:text-6xl mb-8 text-directors-crimson">
             Let’s Talk About Your Story
           </motion.h2>
           
-          <motion.p variants={fadeInUp} className="text-xl text-charcoal/70 mb-12 leading-relaxed">
+          <motion.p variants={fadeInUp} className="text-xl text-espresso-black/70 mb-12 leading-relaxed">
             If something here resonated, that’s a good sign. The writers I work with tend to find me when they’re ready — ready for depth, ready for honesty, ready to discover what their story is really about.
           </motion.p>
           
           <motion.div variants={fadeInUp} className="flex flex-col md:flex-row items-center justify-center gap-6">
             <Button to="/contact" variant="primary">Book Your Discovery Call</Button>
-            <span className="text-sm text-charcoal/50">or</span>
-            <a href="mailto:mark@scripttheory.com" className="text-deep-teal hover:text-burnt-amber transition-colors underline underline-offset-4">
+            <span className="text-sm text-espresso-black/50">or</span>
+            <a href="mailto:mark@scripttheory.com" className="text-directors-crimson hover:text-golden-ocher transition-colors underline underline-offset-4">
               Email me directly
             </a>
           </motion.div>

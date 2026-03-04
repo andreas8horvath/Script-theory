@@ -15,10 +15,10 @@ const Button = ({ children, to, onClick, variant = 'primary', className }: Butto
   const baseStyles = "inline-flex items-center justify-center px-8 py-4 text-sm uppercase tracking-widest transition-all duration-300 font-medium";
   
   const variants = {
-    primary: "bg-burnt-amber text-white hover:bg-deep-teal",
-    secondary: "bg-deep-teal text-warm-ivory hover:bg-forest-green",
-    outline: "border border-current hover:bg-current hover:text-warm-ivory",
-    text: "p-0 hover:text-burnt-amber underline-offset-4 hover:underline"
+    primary: "bg-golden-ocher text-white hover:bg-directors-crimson",
+    secondary: "bg-directors-crimson text-textured-vellum hover:bg-olive-umber",
+    outline: "border border-current hover:bg-current hover:text-textured-vellum",
+    text: "p-0 hover:text-golden-ocher underline-offset-4 hover:underline"
   };
 
   const combinedClassName = cn(baseStyles, variants[variant], className);

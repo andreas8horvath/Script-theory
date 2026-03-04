@@ -61,7 +61,7 @@ export default function TestimonialSlider() {
 
   return (
     <div className="relative max-w-4xl mx-auto px-6 md:px-12 py-12">
-      <Quote className="text-soft-gold mx-auto mb-8 opacity-50 w-12 h-12" />
+      <Quote className="text-antique-brass mx-auto mb-8 opacity-50 w-12 h-12" />
       
       <div className="relative h-[240px] md:h-[180px] flex items-center justify-center">
         <AnimatePresence initial={false} custom={direction} mode="wait">
@@ -78,14 +78,14 @@ export default function TestimonialSlider() {
             }}
             className="absolute w-full text-center"
           >
-            <h3 className="text-xl md:text-3xl font-serif italic leading-relaxed mb-6 text-warm-ivory">
+            <h3 className="text-xl md:text-3xl font-serif italic leading-relaxed mb-6 text-textured-vellum">
               "{testimonials[index].text}"
             </h3>
             <div className="flex flex-col items-center">
-              <span className="text-sm uppercase tracking-widest font-bold text-burnt-amber">
+              <span className="text-sm uppercase tracking-widest font-bold text-golden-ocher">
                 {testimonials[index].author}
               </span>
-              <span className="text-xs text-warm-ivory/60 mt-1">
+              <span className="text-xs text-textured-vellum/60 mt-1">
                 {testimonials[index].role}
               </span>
             </div>
@@ -96,14 +96,14 @@ export default function TestimonialSlider() {
       <div className="flex justify-center gap-4 mt-8">
         <button 
           onClick={prevTestimonial}
-          className="p-2 rounded-full border border-warm-ivory/20 text-warm-ivory/60 hover:text-warm-ivory hover:border-warm-ivory transition-colors focus:outline-none"
+          className="p-2 rounded-full border border-textured-vellum/20 text-textured-vellum/60 hover:text-textured-vellum hover:border-textured-vellum transition-colors focus:outline-none"
           aria-label="Previous testimonial"
         >
           <ChevronLeft size={20} />
         </button>
         <button 
           onClick={nextTestimonial}
-          className="p-2 rounded-full border border-warm-ivory/20 text-warm-ivory/60 hover:text-warm-ivory hover:border-warm-ivory transition-colors focus:outline-none"
+          className="p-2 rounded-full border border-textured-vellum/20 text-textured-vellum/60 hover:text-textured-vellum hover:border-textured-vellum transition-colors focus:outline-none"
           aria-label="Next testimonial"
         >
           <ChevronRight size={20} />

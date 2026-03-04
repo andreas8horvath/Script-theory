@@ -40,7 +40,7 @@ export default function App() {
   return (
     <Router>
       <ScrollToTop />
-      <div className="min-h-screen bg-warm-ivory font-sans text-charcoal selection:bg-burnt-amber selection:text-white flex flex-col">
+      <div className="min-h-screen bg-textured-vellum font-sans text-espresso-black selection:bg-golden-ocher selection:text-white flex flex-col">
         <Navbar />
         <main className="flex-grow pt-24">
           <AnimatePresence mode="wait">

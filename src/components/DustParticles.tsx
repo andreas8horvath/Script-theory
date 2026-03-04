@@ -19,7 +19,7 @@ export const DustParticles = () => {
       {particles.map((p) => (
         <motion.div
           key={p.id}
-          className="absolute rounded-full bg-warm-ivory/30 blur-[0.5px]"
+          className="absolute rounded-full bg-textured-vellum/30 blur-[0.5px]"
           style={{
             left: `${p.x}%`,
             top: `${p.y}%`,
