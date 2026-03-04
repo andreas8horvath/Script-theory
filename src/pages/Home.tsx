@@ -252,7 +252,7 @@ const Home = () => {
       </Section>
 
       {/* Who This Is For Section */}
-      <Section>
+      <Section className="bg-muted-clay/10">
         <div className="max-w-4xl mx-auto">
           <motion.h2 
             initial={{ opacity: 0 }}
