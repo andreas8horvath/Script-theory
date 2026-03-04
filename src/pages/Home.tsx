@@ -30,7 +30,7 @@ const Home = () => {
           <div className="absolute inset-0 bg-deep-teal/60 mix-blend-multiply" />
         </div>
 
-        <div className="relative z-10 max-w-4xl mx-auto text-center">
+        <div className="relative z-10 max-w-6xl mx-auto text-center">
           <motion.div
             initial="hidden"
             animate="visible"
@@ -40,7 +40,7 @@ const Home = () => {
               variants={fadeInUp}
               className="font-serif text-4xl md:text-6xl lg:text-7xl leading-tight mb-6"
             >
-              Your Characters Are Waiting. <br/>
+              <span className="md:whitespace-nowrap">Your Characters Are Waiting.</span> <br/>
               <span className="italic text-soft-gold">Learn to Speak to Them.</span>
             </motion.h1>
             
