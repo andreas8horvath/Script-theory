@@ -21,12 +21,12 @@ const Logo: React.FC<LogoProps> = ({
 
   return (
     <div className={cn("flex items-center gap-3 select-none", className)}>
-      <div className="relative flex items-center justify-center">
+      <div className="relative flex items-center justify-center h-full w-auto">
         {!imageError ? (
           <img 
             src="/logo.png" 
             alt="Script Theory Logo" 
-            className={cn("h-10 w-auto object-contain", iconClassName)}
+            className={cn("h-10 w-auto object-contain max-h-full max-w-full", iconClassName)}
             onError={() => setImageError(true)}
           />
         ) : (

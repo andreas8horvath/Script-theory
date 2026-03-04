@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
         <div className="col-span-1 md:col-span-2">
           <Link to="/" className="mb-6 block">
-            <Logo light textClassName="text-3xl" iconClassName="h-12 w-12" />
+            <Logo light showText={false} iconClassName="h-20 w-auto" />
           </Link>
           <p className="text-muted-sage/80 max-w-md font-light leading-relaxed">
             Holistic screenwriting coaching for writers ready to go beyond formula and build living, emotionally powerful stories.
