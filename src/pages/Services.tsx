@@ -19,7 +19,7 @@ const Services = () => {
       </Section>
 
       {/* The Foundation */}
-      <Section>
+      <Section id="courses">
         <div className="max-w-5xl mx-auto">
           <div className="mb-12">
             <span className="text-sm uppercase tracking-widest text-burnt-amber font-bold">The Foundation</span>
@@ -73,7 +73,7 @@ const Services = () => {
       </Section>
 
       {/* The Deep Dive */}
-      <Section className="bg-muted-clay/10">
+      <Section className="bg-muted-clay/10" id="consultations">
         <div className="max-w-5xl mx-auto">
           <div className="mb-12">
             <span className="text-sm uppercase tracking-widest text-burnt-amber font-bold">The Deep Dive</span>
@@ -117,7 +117,7 @@ const Services = () => {
       {/* Other Services */}
       <Section>
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-16">
-          <div>
+          <div id="mentoring">
             <span className="text-sm uppercase tracking-widest text-burnt-amber font-bold">The Partnership</span>
             <h3 className="text-3xl font-serif text-deep-teal mt-2 mb-4">Private Mentoring</h3>
             <p className="text-charcoal/80 mb-6 leading-relaxed">
@@ -126,7 +126,7 @@ const Services = () => {
             <p className="text-sm text-slate mb-6">Customised to your needs. May include regular sessions, script reads, career guidance.</p>
             <Button to="/contact" variant="text" className="text-deep-teal">Contact to Discuss</Button>
           </div>
-          <div>
+          <div id="hire">
             <span className="text-sm uppercase tracking-widest text-burnt-amber font-bold">The Collaboration</span>
             <h3 className="text-3xl font-serif text-deep-teal mt-2 mb-4">Screenwriter for Hire</h3>
             <p className="text-charcoal/80 mb-6 leading-relaxed">

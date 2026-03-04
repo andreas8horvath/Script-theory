@@ -158,17 +158,17 @@ const Home = () => {
             {
               title: "Holistic Writing Courses",
               desc: "A structured journey from screenplay fundamentals to deep character and storyverse development. Over six or twelve months, you’ll learn to use your body, your emotions, and your life experience as creative instruments.",
-              link: "/services"
+              link: "/services#courses"
             },
             {
               title: "Script Consultations",
               desc: "Bring your screenplay — complete or in progress — and let’s work on it together. Not just structure and pacing, but the deeper questions: Is the storyverse alive? Do your characters live and breathe?",
-              link: "/services"
+              link: "/services#consultations"
             },
             {
               title: "Mentoring & Development",
               desc: "For writers who want an ongoing creative partnership. Regular sessions focused on your projects, your career, and your growth as an artist. This is the deep dive — the space where real transformation happens.",
-              link: "/services"
+              link: "/services#mentoring"
             }
           ].map((service, index) => (
             <motion.div
