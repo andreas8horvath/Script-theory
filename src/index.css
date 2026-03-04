@@ -10,8 +10,8 @@
   --color-soft-gold: #D4AF37;
   --color-muted-clay: #B07D62;
 
-  --font-serif: "Playfair Display", serif;
-  --font-sans: "Inter", sans-serif;
+  --font-serif: "Libre Baskerville", serif;
+  --font-sans: "Lora", serif;
 }
 
 @layer base {
