@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Section from '@/components/Section';
 import Button from '@/components/Button';
 import TestimonialSlider from '@/components/TestimonialSlider';
+import { DustParticles } from '@/components/DustParticles';
 import { ArrowRight, Quote } from 'lucide-react';
 
 const fadeInUp = {
@@ -20,14 +21,23 @@ const Home = () => {
     <>
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-deep-teal text-warm-ivory px-6">
-        <div className="absolute inset-0 z-0 opacity-30">
-          <img 
+        <div className="absolute inset-0 z-0">
+          <motion.img 
             src="https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=2573&auto=format&fit=crop" 
             alt="Writer's desk with notebook" 
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover opacity-40"
+            initial={{ scale: 1.0 }}
+            animate={{ scale: 1.15 }}
+            transition={{ 
+              duration: 25, 
+              repeat: Infinity, 
+              repeatType: "reverse", 
+              ease: "linear" 
+            }}
             referrerPolicy="no-referrer"
           />
-          <div className="absolute inset-0 bg-deep-teal/60 mix-blend-multiply" />
+          <div className="absolute inset-0 bg-deep-teal/50 mix-blend-multiply" />
+          <DustParticles />
         </div>
 
         <div className="relative z-10 max-w-6xl mx-auto text-center">
