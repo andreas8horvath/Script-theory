@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { PenTool } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import logoImg from '@/assets/logo.png';
+import logoImg from '@/assets/script-theory-logo.png';
 
 interface LogoProps {
   className?: string;
