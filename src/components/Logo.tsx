@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { PenTool } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import logoImg from '@/assets/logo.png';
 
 interface LogoProps {
   className?: string;
@@ -24,7 +25,7 @@ const Logo: React.FC<LogoProps> = ({
       <div className="relative flex items-center justify-center h-full w-auto">
         {!imageError ? (
           <img 
-            src="/logo.png" 
+            src={logoImg} 
             alt="Script Theory Logo" 
             className={cn("h-10 w-auto object-contain max-h-full max-w-full", iconClassName)}
             onError={() => setImageError(true)}
