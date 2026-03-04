@@ -192,10 +192,10 @@ const Home = () => {
               }}
               className="group cursor-pointer"
             >
-              <div className="h-full border border-charcoal/10 p-8 hover:bg-warm-ivory hover:shadow-xl transition-all duration-500 hover:-translate-y-1 bg-white/50">
+              <div className="h-full flex flex-col border border-charcoal/10 p-8 hover:bg-warm-ivory hover:shadow-xl transition-all duration-500 hover:-translate-y-1 bg-white/50">
                 <h3 className="text-2xl mb-6 text-deep-teal group-hover:text-burnt-amber transition-colors">{service.title}</h3>
-                <p className="text-charcoal/70 mb-8 leading-relaxed">{service.desc}</p>
-                <Link to={service.link} className="inline-flex items-center text-sm uppercase tracking-widest font-medium text-deep-teal group-hover:translate-x-2 transition-transform">
+                <p className="text-charcoal/70 mb-8 leading-relaxed flex-grow">{service.desc}</p>
+                <Link to={service.link} className="inline-flex items-center text-sm uppercase tracking-widest font-medium text-deep-teal group-hover:translate-x-2 transition-transform mt-auto">
                   Learn More <ArrowRight size={16} className="ml-2" />
                 </Link>
               </div>
