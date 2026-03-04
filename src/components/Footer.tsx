@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Logo from './Logo';
 
 const Footer = () => {
   return (
     <footer className="bg-directors-crimson text-textured-vellum py-20 px-6 lg:px-12">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
         <div className="col-span-1 md:col-span-2">
-          <Link to="/" className="font-serif text-3xl tracking-tight text-textured-vellum mb-6 block">
-            Script Theory<span className="text-golden-ocher">.</span>
+          <Link to="/" className="mb-6 block">
+            <Logo light textClassName="text-3xl" iconClassName="h-12 w-12" />
           </Link>
           <p className="text-muted-sage/80 max-w-md font-light leading-relaxed">
             Holistic screenwriting coaching for writers ready to go beyond formula and build living, emotionally powerful stories.
