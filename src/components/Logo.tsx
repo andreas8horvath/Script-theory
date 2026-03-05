@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import { PenTool } from 'lucide-react';
 import { cn } from '@/lib/utils';
-// Force inline base64 to avoid path resolution issues on hosting
-import logoLight from '@/assets/logo-light.png?inline';
-import logoDark from '@/assets/logo-dark.png?inline';
+import { logoLightData, logoDarkData } from './logo-data';
 
 interface LogoProps {
   className?: string;
@@ -22,7 +20,7 @@ const Logo: React.FC<LogoProps> = ({
 }) => {
   const [imageError, setImageError] = useState(false);
   
-  const logoSrc = light ? logoLight : logoDark;
+  const logoSrc = light ? logoLightData : logoDarkData;
 
   return (
     <div className={cn("flex items-center gap-3 select-none", className)}>
