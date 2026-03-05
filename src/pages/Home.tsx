@@ -74,7 +74,7 @@ const Home = () => {
               variants={fadeInUp}
               className="mt-16 text-sm uppercase tracking-widest opacity-70 flex items-center justify-center gap-4"
             >
-              <span>Mark Fyvers</span>
+              <span>Mark Fyers</span>
               <span className="w-1 h-1 bg-current rounded-full" />
               <span>Screenwriter</span>
               <span className="w-1 h-1 bg-current rounded-full" />
