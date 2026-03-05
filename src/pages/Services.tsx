@@ -294,12 +294,19 @@ const Services = () => {
       </Section>
 
       {/* CTA */}
-      <Section className="text-center bg-directors-crimson text-textured-vellum">
-        <h2 className="text-4xl md:text-5xl mb-8">Ready to Go Deeper?</h2>
-        <p className="text-xl text-textured-vellum/80 mb-12 max-w-2xl mx-auto">
-          The writers I work with come because they sense there is more in their stories than they’ve been able to access on their own. If that sounds like you, let’s talk.
-        </p>
-        <Button to="/contact" variant="primary" className="bg-golden-ocher hover:bg-white hover:text-directors-crimson shadow-xl hover:shadow-2xl hover:-translate-y-1">Book Your Discovery Call</Button>
+      <Section className="text-center bg-white">
+        <motion.div
+           initial="hidden"
+           whileInView="visible"
+           viewport={{ once: true }}
+           variants={fadeInUp}
+        >
+          <h2 className="text-4xl md:text-5xl text-directors-crimson mb-8">Ready to Go Deeper?</h2>
+          <p className="text-xl text-espresso-black/70 mb-12 max-w-2xl mx-auto">
+            The writers I work with come because they sense there is more in their stories than they’ve been able to access on their own. If that sounds like you, let’s talk.
+          </p>
+          <Button to="/contact" variant="primary" className="shadow-xl hover:shadow-2xl hover:-translate-y-1">Book Your Discovery Call</Button>
+        </motion.div>
       </Section>
     </>
   );
