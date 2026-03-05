@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { PenTool } from 'lucide-react';
 import { cn } from '@/lib/utils';
+// Force inline base64 to avoid path resolution issues on hosting
+import logoLight from '@/assets/logo-light.png';
+import logoDark from '@/assets/logo-dark.png';
 
 interface LogoProps {
   className?: string;
@@ -18,11 +21,6 @@ const Logo: React.FC<LogoProps> = ({
   light = false
 }) => {
   const [imageError, setImageError] = useState(false);
-  
-  // Use public folder paths with BASE_URL handling
-  const baseUrl = import.meta.env.BASE_URL;
-  const logoLight = `${baseUrl}images/logo-light.png`;
-  const logoDark = `${baseUrl}images/logo-dark.png`;
   
   const logoSrc = light ? logoLight : logoDark;
 
