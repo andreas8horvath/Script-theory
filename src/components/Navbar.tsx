@@ -58,9 +58,9 @@ const Navbar = () => {
           <button
             onClick={toggleMenu}
             className="md:hidden z-50 p-2 text-directors-crimson focus:outline-none"
-            aria-label="Toggle menu"
+            aria-label="Open menu"
           >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
+            <Menu size={24} />
           </button>
         </div>
       </div>
@@ -69,29 +69,49 @@ const Navbar = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            className="fixed inset-0 bg-textured-vellum z-40 flex flex-col items-center justify-center space-y-8 md:hidden"
+            initial={{ opacity: 0, x: '100%' }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: '100%' }}
+            transition={{ type: "spring", damping: 25, stiffness: 200 }}
+            className="fixed inset-0 bg-textured-vellum z-[100] flex flex-col md:hidden"
           >
-            {links.map((link) => (
-              <Link
-                key={link.href}
-                to={link.href}
-                className={cn(
-                  "font-serif text-3xl text-directors-crimson hover:text-golden-ocher transition-colors",
-                  location.pathname === link.href && "italic text-golden-ocher"
-                )}
-              >
-                {link.label}
+            {/* Mobile Menu Header */}
+            <div className="flex items-center justify-between p-6 border-b border-espresso-black/5">
+              <Link to="/" onClick={toggleMenu} className="h-12 block">
+                <Logo className="h-full w-auto" showText={true} iconClassName="h-full w-auto" />
               </Link>
-            ))}
-            <Link
-              to="/contact"
-              className="mt-8 px-8 py-4 bg-directors-crimson text-textured-vellum text-lg uppercase tracking-widest hover:bg-olive-umber transition-colors duration-300"
-            >
-              Book a Call
-            </Link>
+              <button 
+                onClick={toggleMenu}
+                className="p-2 text-directors-crimson focus:outline-none"
+                aria-label="Close menu"
+              >
+                <X size={24} />
+              </button>
+            </div>
+
+            {/* Mobile Menu Links */}
+            <div className="flex-1 flex flex-col items-center justify-center space-y-8 p-6">
+              {links.map((link) => (
+                <Link
+                  key={link.href}
+                  to={link.href}
+                  onClick={toggleMenu}
+                  className={cn(
+                    "font-serif text-3xl text-directors-crimson hover:text-golden-ocher transition-colors",
+                    location.pathname === link.href && "italic text-golden-ocher"
+                  )}
+                >
+                  {link.label}
+                </Link>
+              ))}
+              <Link
+                to="/contact"
+                onClick={toggleMenu}
+                className="mt-8 px-8 py-4 bg-directors-crimson text-textured-vellum text-lg uppercase tracking-widest hover:bg-olive-umber transition-colors duration-300"
+              >
+                Book a Call
+              </Link>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
